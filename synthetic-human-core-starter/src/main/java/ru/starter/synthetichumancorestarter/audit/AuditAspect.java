@@ -1,4 +1,4 @@
-package ru.starter.synthetichumancorestarter.aspect;
+package ru.starter.synthetichumancorestarter.audit;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
