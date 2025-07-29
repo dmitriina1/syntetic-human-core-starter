@@ -1,0 +1,5 @@
+starter:
+  synthetichumancorestarter:
+    audit-mode: kafka
+    kafka-topic: android-audit
+    queue-capacity: 50
