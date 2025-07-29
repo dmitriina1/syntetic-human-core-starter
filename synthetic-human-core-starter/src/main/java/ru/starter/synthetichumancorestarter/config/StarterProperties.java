@@ -4,16 +4,10 @@ package ru.starter.synthetichumancorestarter.config;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.bind.DefaultValue;
 
-@ConfigurationProperties(prefix = "wy.starter")
+@ConfigurationProperties(prefix = "starter.synthetichumancorestarter")
 public record StarterProperties(
-        @DefaultValue("console")
-        String auditMode,
-        @DefaultValue("android-audit")
+        boolean auditToKafka,
         String kafkaTopic,
-        @DefaultValue("100")
-        int queueCapacity
-) {
-    public StarterProperties() {
-        this("console", "android-audit", 100);
-    }
-}
+        int queueCapacity,
+        String auditMode // "console" or "kafka"
+) {}
