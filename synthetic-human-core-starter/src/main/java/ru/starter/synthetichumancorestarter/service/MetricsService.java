@@ -11,6 +11,7 @@ import java.util.concurrent.ConcurrentHashMap;
 @Service
 public class MetricsService {
 
+
     private final MeterRegistry registry;
     private final AtomicInteger queueSize = new AtomicInteger(0);
     private final ConcurrentHashMap<String, Counter> authorCounters = new ConcurrentHashMap<>();
